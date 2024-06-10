@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Container, Heading, Input, Button, VStack, HStack, Checkbox, IconButton, Text } from "@chakra-ui/react";
+import { Box, Container, Heading, Input, Button, VStack, HStack, Checkbox, IconButton, Text } from "@chakra-ui/react";
 import { FaTrash } from "react-icons/fa";
 
 const Index = () => {
@@ -26,7 +26,8 @@ const Index = () => {
   };
 
   return (
-    <Container centerContent maxW="container.md" py={10}>
+    <Box bg="green.500" minH="100vh">
+      <Container centerContent maxW="container.md" py={10}>
       <VStack spacing={4} width="100%">
         <Heading as="h1" size="xl" mb={6}>
           Todo App
@@ -60,6 +61,7 @@ const Index = () => {
         </VStack>
       </VStack>
     </Container>
+    </Box>
   );
 };
 
